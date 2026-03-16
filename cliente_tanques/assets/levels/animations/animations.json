@@ -1,0 +1,266 @@
+{
+  "animationGroups": [
+    {
+      "id": "__main__",
+      "name": "Main",
+      "collapsed": false
+    }
+  ],
+  "animations": [
+    {
+      "id": "anim_1773416953165838",
+      "name": "dead_animation",
+      "mediaFile": "media/dead_animation-removebg-preview.png",
+      "startFrame": 0,
+      "endFrame": 5,
+      "fps": 12.0,
+      "loop": true,
+      "groupId": "__main__",
+      "anchorX": 0.5074626865671642,
+      "anchorY": 0.5182926829268293,
+      "anchorColor": "red",
+      "hitBoxes": [],
+      "frameRigs": [
+        {
+          "frame": 0,
+          "anchorX": 0.5074626865671642,
+          "anchorY": 0.5182926829268293,
+          "anchorColor": "red",
+          "hitBoxes": []
+        },
+        {
+          "frame": 1,
+          "anchorX": 0.44029850746268656,
+          "anchorY": 0.5182926829268293,
+          "anchorColor": "red",
+          "hitBoxes": []
+        },
+        {
+          "frame": 2,
+          "anchorX": 0.43283582089552236,
+          "anchorY": 0.5182926829268293,
+          "anchorColor": "red",
+          "hitBoxes": []
+        },
+        {
+          "frame": 3,
+          "anchorX": 0.5671641791044777,
+          "anchorY": 0.5,
+          "anchorColor": "red",
+          "hitBoxes": []
+        },
+        {
+          "frame": 4,
+          "anchorX": 0.4925373134328358,
+          "anchorY": 0.5060975609756098,
+          "anchorColor": "red",
+          "hitBoxes": []
+        },
+        {
+          "frame": 5,
+          "anchorX": 0.4552238805970149,
+          "anchorY": 0.5,
+          "anchorColor": "red",
+          "hitBoxes": []
+        }
+      ]
+    },
+    {
+      "id": "anim_1773417090594115",
+      "name": "heavy_bullet",
+      "mediaFile": "media/All_Fire_Bullet_Pixel_16x16_05.png",
+      "startFrame": 600,
+      "endFrame": 604,
+      "fps": 6.6,
+      "loop": true,
+      "groupId": "__main__",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "anchorColor": "red",
+      "hitBoxes": [],
+      "frameRigs": [
+        {
+          "frame": 600,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "anchorColor": "red",
+          "hitBoxes": []
+        },
+        {
+          "frame": 601,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "anchorColor": "red",
+          "hitBoxes": []
+        },
+        {
+          "frame": 602,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "anchorColor": "red",
+          "hitBoxes": []
+        },
+        {
+          "frame": 603,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "anchorColor": "red",
+          "hitBoxes": []
+        },
+        {
+          "frame": 604,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "anchorColor": "red",
+          "hitBoxes": []
+        }
+      ]
+    },
+    {
+      "id": "anim_1773417375904465",
+      "name": "basic_bullet",
+      "mediaFile": "media/All_Fire_Bullet_Pixel_16x16_06.png",
+      "startFrame": 61,
+      "endFrame": 64,
+      "fps": 6.6,
+      "loop": true,
+      "groupId": "__main__",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "anchorColor": "red",
+      "hitBoxes": [],
+      "frameRigs": [
+        {
+          "frame": 61,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "anchorColor": "red",
+          "hitBoxes": []
+        },
+        {
+          "frame": 62,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "anchorColor": "red",
+          "hitBoxes": []
+        },
+        {
+          "frame": 63,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "anchorColor": "red",
+          "hitBoxes": []
+        },
+        {
+          "frame": 64,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "anchorColor": "red",
+          "hitBoxes": []
+        }
+      ]
+    },
+    {
+      "id": "anim_1773417497874222",
+      "name": "ricochet_bullet",
+      "mediaFile": "media/All_Fire_Bullet_Pixel_16x16_05.png",
+      "startFrame": 146,
+      "endFrame": 149,
+      "fps": 6.0,
+      "loop": true,
+      "groupId": "__main__",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "anchorColor": "red",
+      "hitBoxes": [],
+      "frameRigs": [
+        {
+          "frame": 146,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "anchorColor": "red",
+          "hitBoxes": []
+        },
+        {
+          "frame": 147,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "anchorColor": "red",
+          "hitBoxes": []
+        },
+        {
+          "frame": 148,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "anchorColor": "red",
+          "hitBoxes": []
+        },
+        {
+          "frame": 149,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "anchorColor": "red",
+          "hitBoxes": []
+        }
+      ]
+    },
+    {
+      "id": "anim_1773417611840407",
+      "name": "anim_disparo",
+      "mediaFile": "media/anim_disparo.png",
+      "startFrame": 0,
+      "endFrame": 5,
+      "fps": 6.0,
+      "loop": true,
+      "groupId": "__main__",
+      "anchorX": 0.05555555555555555,
+      "anchorY": 0.5,
+      "anchorColor": "red",
+      "hitBoxes": [],
+      "frameRigs": [
+        {
+          "frame": 0,
+          "anchorX": 0.05555555555555555,
+          "anchorY": 0.5,
+          "anchorColor": "red",
+          "hitBoxes": []
+        },
+        {
+          "frame": 1,
+          "anchorX": 0.3555555555555555,
+          "anchorY": 0.5,
+          "anchorColor": "red",
+          "hitBoxes": []
+        },
+        {
+          "frame": 2,
+          "anchorX": 0.47777777777777775,
+          "anchorY": 0.47916666666666663,
+          "anchorColor": "red",
+          "hitBoxes": []
+        },
+        {
+          "frame": 3,
+          "anchorX": 0.6222222222222222,
+          "anchorY": 0.4895833333333333,
+          "anchorColor": "red",
+          "hitBoxes": []
+        },
+        {
+          "frame": 4,
+          "anchorX": 0.7333333333333334,
+          "anchorY": 0.4791666666666667,
+          "anchorColor": "red",
+          "hitBoxes": []
+        },
+        {
+          "frame": 5,
+          "anchorX": 0.4444444444444444,
+          "anchorY": 0.4270833333333333,
+          "anchorColor": "red",
+          "hitBoxes": []
+        }
+      ]
+    }
+  ]
+}

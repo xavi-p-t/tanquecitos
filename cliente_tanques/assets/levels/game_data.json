@@ -1,0 +1,139 @@
+{
+  "name": "tankecitos",
+  "description": "",
+  "levels": [],
+  "levelGroups": [
+    {
+      "id": "__main__",
+      "name": "Main",
+      "collapsed": false
+    }
+  ],
+  "mediaAssets": [
+    {
+      "name": "Background_Bleak-Yellow_TileSet",
+      "fileName": "media/Background_Bleak-Yellow_TileSet.png",
+      "mediaType": "tileset",
+      "tileWidth": 384,
+      "tileHeight": 272,
+      "selectionColorHex": "#FFCC00",
+      "groupId": "__main__"
+    },
+    {
+      "name": "rebote_bullet",
+      "fileName": "media/rebote_bullet.png",
+      "mediaType": "tileset",
+      "tileWidth": 6,
+      "tileHeight": 3,
+      "selectionColorHex": "#FFCC00",
+      "groupId": "__group_1773414014927234_0"
+    },
+    {
+      "name": "All_Fire_Bullet_Pixel_16x16_05",
+      "fileName": "media/All_Fire_Bullet_Pixel_16x16_05.png",
+      "mediaType": "spritesheet",
+      "tileWidth": 16,
+      "tileHeight": 16,
+      "selectionColorHex": "#FFCC00",
+      "groupId": "__group_1773414014927234_0"
+    },
+    {
+      "name": "All_Fire_Bullet_Pixel_16x16_06",
+      "fileName": "media/All_Fire_Bullet_Pixel_16x16_06.png",
+      "mediaType": "spritesheet",
+      "tileWidth": 16,
+      "tileHeight": 16,
+      "selectionColorHex": "#FFCC00",
+      "groupId": "__group_1773414014927234_0"
+    },
+    {
+      "name": "anim_disparo",
+      "fileName": "media/anim_disparo.png",
+      "mediaType": "spritesheet",
+      "tileWidth": 45,
+      "tileHeight": 48,
+      "selectionColorHex": "#FFCC00",
+      "groupId": "__group_1773414014927234_0"
+    },
+    {
+      "name": "basic_bullet",
+      "fileName": "media/basic_bullet.png",
+      "mediaType": "tileset",
+      "tileWidth": 4,
+      "tileHeight": 3,
+      "selectionColorHex": "#FFCC00",
+      "groupId": "__group_1773414014927234_0"
+    },
+    {
+      "name": "Heart_Full",
+      "fileName": "media/Heart_Full.png",
+      "mediaType": "tileset",
+      "tileWidth": 13,
+      "tileHeight": 12,
+      "selectionColorHex": "#FFCC00",
+      "groupId": "__group_1773414382725786_2"
+    },
+    {
+      "name": "Heart_Empty",
+      "fileName": "media/Heart_Empty.png",
+      "mediaType": "tileset",
+      "tileWidth": 13,
+      "tileHeight": 12,
+      "selectionColorHex": "#FFCC00",
+      "groupId": "__group_1773414382725786_2"
+    },
+    {
+      "name": "dead_animation-removebg-preview",
+      "fileName": "media/dead_animation-removebg-preview.png",
+      "mediaType": "spritesheet",
+      "tileWidth": 67,
+      "tileHeight": 82,
+      "selectionColorHex": "#FFCC00",
+      "groupId": "__main__"
+    }
+  ],
+  "mediaGroups": [
+    {
+      "id": "__main__",
+      "name": "Main",
+      "collapsed": false
+    },
+    {
+      "id": "__group_1773414014927234_0",
+      "name": "bullets",
+      "collapsed": false
+    },
+    {
+      "id": "__group_1773414369631960_1",
+      "name": "background",
+      "collapsed": false
+    },
+    {
+      "id": "__group_1773414382725786_2",
+      "name": "lifes",
+      "collapsed": false
+    },
+    {
+      "id": "__group_1773414388540045_3",
+      "name": "tanks",
+      "collapsed": false
+    },
+    {
+      "id": "__group_1773415570044785_4",
+      "name": "powerups",
+      "collapsed": false
+    },
+    {
+      "id": "__group_1773415583683125_5",
+      "name": "deadanimation",
+      "collapsed": false
+    }
+  ],
+  "zoneTypes": [
+    {
+      "name": "Default",
+      "color": "blue"
+    }
+  ],
+  "animationsFile": "animations/animations.json"
+}
