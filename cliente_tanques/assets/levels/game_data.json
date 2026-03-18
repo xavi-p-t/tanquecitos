@@ -1,7 +1,55 @@
 {
   "name": "tankecitos",
   "description": "",
-  "levels": [],
+  "levels": [
+    {
+      "name": "mapa1",
+      "description": "mapa1",
+      "gameplayData": "",
+      "layers": [
+        {
+          "name": "MAP1",
+          "gameplayData": "",
+          "x": 0,
+          "y": 0,
+          "depth": 0.0,
+          "tilesSheetFile": "media/Background_Bleak-Yellow_TileSet.png",
+          "tilesWidth": 16,
+          "tilesHeight": 16,
+          "visible": true,
+          "groupId": "__main__",
+          "tileMapFile": "tilemaps/level_000_layer_000.json"
+        }
+      ],
+      "layerGroups": [
+        {
+          "id": "__main__",
+          "name": "Main",
+          "collapsed": false
+        }
+      ],
+      "sprites": [],
+      "spriteGroups": [
+        {
+          "id": "__main__",
+          "name": "Main",
+          "collapsed": false
+        }
+      ],
+      "groupId": "__main__",
+      "viewportWidth": 320,
+      "viewportHeight": 180,
+      "viewportX": 0,
+      "viewportY": 0,
+      "viewportAdaptation": "letterbox",
+      "viewportInitialColor": "green",
+      "viewportPreviewColor": "blue",
+      "backgroundColorHex": "#DCDCE1",
+      "depthSensitivity": 0.08,
+      "zonesFile": "zones/level_000_zones.json",
+      "pathsFile": "paths/level_000_paths.json"
+    }
+  ],
   "levelGroups": [
     {
       "id": "__main__",
@@ -10,15 +58,6 @@
     }
   ],
   "mediaAssets": [
-    {
-      "name": "Background_Bleak-Yellow_TileSet",
-      "fileName": "media/Background_Bleak-Yellow_TileSet.png",
-      "mediaType": "tileset",
-      "tileWidth": 384,
-      "tileHeight": 272,
-      "selectionColorHex": "#FFCC00",
-      "groupId": "__main__"
-    },
     {
       "name": "rebote_bullet",
       "fileName": "media/rebote_bullet.png",
@@ -65,6 +104,15 @@
       "groupId": "__group_1773414014927234_0"
     },
     {
+      "name": "Background_Bleak-Yellow_TileSet",
+      "fileName": "media/Background_Bleak-Yellow_TileSet.png",
+      "mediaType": "tileset",
+      "tileWidth": 16,
+      "tileHeight": 16,
+      "selectionColorHex": "#FFCC00",
+      "groupId": "__group_1773414369631960_1"
+    },
+    {
       "name": "Heart_Full",
       "fileName": "media/Heart_Full.png",
       "mediaType": "tileset",
@@ -101,7 +149,7 @@
     {
       "id": "__group_1773414014927234_0",
       "name": "bullets",
-      "collapsed": false
+      "collapsed": true
     },
     {
       "id": "__group_1773414369631960_1",
@@ -111,7 +159,7 @@
     {
       "id": "__group_1773414382725786_2",
       "name": "lifes",
-      "collapsed": false
+      "collapsed": true
     },
     {
       "id": "__group_1773414388540045_3",
@@ -126,12 +174,12 @@
     {
       "id": "__group_1773415583683125_5",
       "name": "deadanimation",
-      "collapsed": false
+      "collapsed": true
     }
   ],
   "zoneTypes": [
     {
-      "name": "Default",
+      "name": "walls",
       "color": "blue"
     }
   ],
