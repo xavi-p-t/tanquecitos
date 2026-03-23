@@ -1,0 +1,417 @@
+{
+  "zoneGroups": [
+    {
+      "id": "__main__",
+      "name": "Main",
+      "collapsed": false
+    },
+    {
+      "id": "__group_1773849305356905_0",
+      "name": "ExternalWall",
+      "collapsed": false
+    },
+    {
+      "id": "__group_1773849330492528_1",
+      "name": "internWall",
+      "collapsed": false
+    }
+  ],
+  "zones": [
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 0,
+      "y": 0,
+      "width": 512,
+      "height": 4,
+      "color": "blue",
+      "groupId": "__group_1773849305356905_0"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 0,
+      "y": 250,
+      "width": 512,
+      "height": 4,
+      "color": "blue",
+      "groupId": "__group_1773849305356905_0"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 508,
+      "y": 6,
+      "width": 4,
+      "height": 244,
+      "color": "blue",
+      "groupId": "__group_1773849305356905_0"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 0,
+      "y": 6,
+      "width": 4,
+      "height": 244,
+      "color": "blue",
+      "groupId": "__group_1773849305356905_0"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 176,
+      "y": 80,
+      "width": 80,
+      "height": 4,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 288,
+      "y": 96,
+      "width": 48,
+      "height": 4,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 316,
+      "y": 59,
+      "width": 51,
+      "height": 4,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 400,
+      "y": 16,
+      "width": 16,
+      "height": 4,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 64,
+      "y": 16,
+      "width": 16,
+      "height": 4,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 176,
+      "y": 112,
+      "width": 32,
+      "height": 4,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 64,
+      "y": 171,
+      "width": 64,
+      "height": 4,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 48,
+      "y": 96,
+      "width": 64,
+      "height": 4,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 176,
+      "y": 43,
+      "width": 64,
+      "height": 4,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 128,
+      "y": 176,
+      "width": 64,
+      "height": 4,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 304,
+      "y": 176,
+      "width": 32,
+      "height": 4,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 384,
+      "y": 128,
+      "width": 32,
+      "height": 4,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 412,
+      "y": 133,
+      "width": 4,
+      "height": 22,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 464,
+      "y": 32,
+      "width": 4,
+      "height": 32,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 172,
+      "y": 5,
+      "width": 4,
+      "height": 42,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 124,
+      "y": 176,
+      "width": 4,
+      "height": 48,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 76,
+      "y": 21,
+      "width": 4,
+      "height": 75,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 140,
+      "y": 96,
+      "width": 4,
+      "height": 79,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 332,
+      "y": 101,
+      "width": 4,
+      "height": 75,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 412,
+      "y": 21,
+      "width": 4,
+      "height": 75,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 444,
+      "y": 100,
+      "width": 4,
+      "height": 92,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 252,
+      "y": 85,
+      "width": 4,
+      "height": 90,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 384,
+      "y": 133,
+      "width": 4,
+      "height": 22,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 204,
+      "y": 117,
+      "width": 4,
+      "height": 22,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 176,
+      "y": 117,
+      "width": 4,
+      "height": 22,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 316,
+      "y": 49,
+      "width": 4,
+      "height": 10,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 368,
+      "y": 197,
+      "width": 4,
+      "height": 10,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 384,
+      "y": 155,
+      "width": 32,
+      "height": 4,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 176,
+      "y": 139,
+      "width": 32,
+      "height": 4,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 368,
+      "y": 96,
+      "width": 80,
+      "height": 4,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 368,
+      "y": 192,
+      "width": 80,
+      "height": 4,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "WALL",
+      "type": "walls",
+      "gameplayData": "",
+      "x": 176,
+      "y": 219,
+      "width": 160,
+      "height": 4,
+      "color": "blue",
+      "groupId": "__group_1773849330492528_1"
+    }
+  ]
+}
