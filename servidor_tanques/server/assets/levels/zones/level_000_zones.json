@@ -8,11 +8,16 @@
     {
       "id": "__group_1773849305356905_0",
       "name": "ExternalWall",
-      "collapsed": false
+      "collapsed": true
     },
     {
       "id": "__group_1773849330492528_1",
       "name": "internWall",
+      "collapsed": false
+    },
+    {
+      "id": "__group_1776098339913492_0",
+      "name": "spawns",
       "collapsed": false
     }
   ],
@@ -309,7 +314,7 @@
       "gameplayData": "",
       "x": 384,
       "y": 133,
-      "width": 4,
+      "width": 30,
       "height": 22,
       "color": "blue",
       "groupId": "__group_1773849330492528_1"
@@ -331,7 +336,7 @@
       "gameplayData": "",
       "x": 176,
       "y": 117,
-      "width": 4,
+      "width": 30,
       "height": 22,
       "color": "blue",
       "groupId": "__group_1773849330492528_1"
@@ -412,6 +417,61 @@
       "height": 4,
       "color": "blue",
       "groupId": "__group_1773849330492528_1"
+    },
+    {
+      "name": "Zone 37",
+      "type": "spawn",
+      "gameplayData": "",
+      "x": 34,
+      "y": 29,
+      "width": 29,
+      "height": 29,
+      "color": "orange",
+      "groupId": "__group_1776098339913492_0"
+    },
+    {
+      "name": "Zone 37",
+      "type": "spawn",
+      "gameplayData": "",
+      "x": 425,
+      "y": 34,
+      "width": 29,
+      "height": 29,
+      "color": "orange",
+      "groupId": "__group_1776098339913492_0"
+    },
+    {
+      "name": "Zone 37",
+      "type": "spawn",
+      "gameplayData": "",
+      "x": 385,
+      "y": 204,
+      "width": 29,
+      "height": 29,
+      "color": "orange",
+      "groupId": "__group_1776098339913492_0"
+    },
+    {
+      "name": "Zone 37",
+      "type": "spawn",
+      "gameplayData": "",
+      "x": 186,
+      "y": 9,
+      "width": 29,
+      "height": 29,
+      "color": "orange",
+      "groupId": "__group_1776098339913492_0"
+    },
+    {
+      "name": "Zone 37",
+      "type": "spawn",
+      "gameplayData": "",
+      "x": 82,
+      "y": 186,
+      "width": 29,
+      "height": 29,
+      "color": "orange",
+      "groupId": "__group_1776098339913492_0"
     }
   ]
 }

@@ -10,6 +10,7 @@ class GameService {
   final WebSocketsHandler _socketHandler = WebSocketsHandler();
   
   ValueNotifier<ConnectionStatus> statusNotifier = ValueNotifier(ConnectionStatus.disconnected);
+  Function(String)? onMessageReceived;
 
   final StreamController<String> _mensajesController = StreamController<String>.broadcast();
   Stream<String> get streamMensajes => _mensajesController.stream;
@@ -20,8 +21,8 @@ class GameService {
       host, 
       port, 
       (message) {
-        if (kDebugMode) print("Mensaje recibido: $message");
-        _mensajesController.add(message);
+        // Notificamos a quien esté escuchando (el main)
+        if (onMessageReceived != null) onMessageReceived!(message);
       },
       onError: (e) => _actualizarEstado(),
       onDone: () => _actualizarEstado(),
