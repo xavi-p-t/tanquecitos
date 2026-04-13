@@ -8,12 +8,12 @@
     {
       "id": "__group_1773849305356905_0",
       "name": "ExternalWall",
-      "collapsed": false
+      "collapsed": true
     },
     {
       "id": "__group_1773849330492528_1",
       "name": "internWall",
-      "collapsed": false
+      "collapsed": true
     }
   ],
   "zones": [

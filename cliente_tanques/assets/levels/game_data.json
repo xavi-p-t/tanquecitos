@@ -131,13 +131,31 @@
       "groupId": "__group_1773414382725786_2"
     },
     {
+      "name": "tank_buttom",
+      "fileName": "media/tank_buttom.png",
+      "mediaType": "tileset",
+      "tileWidth": 161,
+      "tileHeight": 180,
+      "selectionColorHex": "#FFCC00",
+      "groupId": "__group_1773414388540045_3"
+    },
+    {
+      "name": "tank_top",
+      "fileName": "media/tank_top.png",
+      "mediaType": "tileset",
+      "tileWidth": 165,
+      "tileHeight": 149,
+      "selectionColorHex": "#FFCC00",
+      "groupId": "__group_1773415570044785_4"
+    },
+    {
       "name": "dead_animation-removebg-preview",
       "fileName": "media/dead_animation-removebg-preview.png",
       "mediaType": "spritesheet",
       "tileWidth": 67,
       "tileHeight": 82,
       "selectionColorHex": "#FFCC00",
-      "groupId": "__main__"
+      "groupId": "__group_1773415583683125_5"
     }
   ],
   "mediaGroups": [
@@ -154,7 +172,7 @@
     {
       "id": "__group_1773414369631960_1",
       "name": "background",
-      "collapsed": false
+      "collapsed": true
     },
     {
       "id": "__group_1773414382725786_2",
@@ -164,12 +182,12 @@
     {
       "id": "__group_1773414388540045_3",
       "name": "tanks",
-      "collapsed": false
+      "collapsed": true
     },
     {
       "id": "__group_1773415570044785_4",
       "name": "powerups",
-      "collapsed": false
+      "collapsed": true
     },
     {
       "id": "__group_1773415583683125_5",
