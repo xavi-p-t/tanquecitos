@@ -181,6 +181,10 @@
     {
       "name": "walls",
       "color": "blue"
+    },
+    {
+      "name": "spawn",
+      "color": "orange"
     }
   ],
   "animationsFile": "animations/animations.json"

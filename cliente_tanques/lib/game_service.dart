@@ -11,6 +11,7 @@ class GameService {
   
   // Notificador para que la UI se entere de los cambios de estado
   ValueNotifier<ConnectionStatus> statusNotifier = ValueNotifier(ConnectionStatus.disconnected);
+  Function(String)? onMessageReceived;
 
   void inicializarConexion() {
     // Configuramos los parámetros del servidor según tu app.js
@@ -18,8 +19,8 @@ class GameService {
       'localhost', // O 10.0.2.2 para emulador
       3000, 
       (message) {
-        if (kDebugMode) print("Mensaje recibido: $message");
-        // Aquí procesarás los estados del juego más adelante
+        // Notificamos a quien esté escuchando (el main)
+        if (onMessageReceived != null) onMessageReceived!(message);
       },
       onError: (e) => _actualizarEstado(),
       onDone: () => _actualizarEstado(),

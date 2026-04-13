@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'game_service.dart';
+import 'pantalla_juego.dart'; // Tu nueva clase aparte
 
 void main() {
-  runApp(const MaterialApp(home: PantallaPrincipal()));
+  runApp(const MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: PantallaPrincipal()));
 }
 
 class PantallaPrincipal extends StatefulWidget {
@@ -18,14 +21,24 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
   @override
   void initState() {
     super.initState();
-    // Llamamos a la conexión desde el inicio
     gameService.inicializarConexion();
+
+    // Escuchamos los mensajes. Si el servidor responde al "hola", navegamos.
+    gameService.onMessageReceived = (message) {
+      if (message.contains("gameplay") || message.contains("welcome")) {
+        // Si recibimos datos de juego o confirmación, saltamos al campo de batalla
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const PantallaJuego()),
+        );
+      }
+    };
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Tanquecitos Multiplayer")),
+      appBar: AppBar(title: const Text("Tanquecitos Wii Style")),
       body: Center(
         child: ValueListenableBuilder(
           valueListenable: gameService.statusNotifier,
@@ -33,13 +46,12 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
             return Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Estado: $estado"),
-                if (gameService.miId != null) 
-                  Text("Mi ID: ${gameService.miId}"),
+                Text("Conexión: $estado"),
                 const SizedBox(height: 20),
                 ElevatedButton(
+                  // Al pulsar, mandamos el hola para "activar" el cambio de vista
                   onPressed: gameService.enviarHola,
-                  child: const Text("Enviar Hola al Servidor"),
+                  child: const Text("Empezar Partida (Enviar Hola)"),
                 ),
               ],
             );
