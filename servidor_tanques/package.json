@@ -1,12 +1,17 @@
 {
   "name": "servidor_tanques",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1",
+    "uuid": "^8.3.2",
+    "ws": "^8.20.0"
+  }
 }
