@@ -1,34 +1,48 @@
+import 'dart:async';
 import 'package:flutter/foundation.dart';
-import 'utils_websockets.dart'; // Tu archivo original
+import 'utils_websockets.dart'; 
 
 class GameService {
-  // Instancia única (Singleton) para acceder desde cualquier parte
   static final GameService _instance = GameService._internal();
   factory GameService() => _instance;
   GameService._internal();
 
   final WebSocketsHandler _socketHandler = WebSocketsHandler();
   
-  // Notificador para que la UI se entere de los cambios de estado
   ValueNotifier<ConnectionStatus> statusNotifier = ValueNotifier(ConnectionStatus.disconnected);
 
-  void inicializarConexion() {
-    // Configuramos los parámetros del servidor según tu app.js
-    _socketHandler.connectToServer(
-      'localhost', // O 10.0.2.2 para emulador
-      3000, 
+  final StreamController<String> _mensajesController = StreamController<String>.broadcast();
+  Stream<String> get streamMensajes => _mensajesController.stream;
+
+  Future<bool> inicializarConexion(String host, int port) async {
+    // CAMBIO AQUÍ: Ahora le ponemos 'await' y quitamos el Future.delayed
+    await _socketHandler.connectToServer(
+      host, 
+      port, 
       (message) {
         if (kDebugMode) print("Mensaje recibido: $message");
-        // Aquí procesarás los estados del juego más adelante
+        _mensajesController.add(message);
       },
       onError: (e) => _actualizarEstado(),
       onDone: () => _actualizarEstado(),
     );
+    
     _actualizarEstado();
+
+    return _socketHandler.connectionStatus == ConnectionStatus.connected;
   }
 
   void _actualizarEstado() {
     statusNotifier.value = _socketHandler.connectionStatus;
+  }
+
+  void enviar(String mensaje) {
+    _socketHandler.sendMessage(mensaje);
+  }
+
+  void desconectar() {
+    _socketHandler.disconnectFromServer();
+    _actualizarEstado();
   }
 
   void enviarHola() {

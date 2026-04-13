@@ -13,7 +13,8 @@ class WebSocketsHandler {
   WebSocketChannel? _socketClient;
   ConnectionStatus connectionStatus = ConnectionStatus.disconnected;
 
-  void connectToServer(
+  // CAMBIO AQUÍ: Ahora devuelve Future<void> en lugar de void
+  Future<void> connectToServer(
     String serverHost,
     int serverPort,
     void Function(String message) callback, {
@@ -33,7 +34,12 @@ class WebSocketsHandler {
         host: host,
         port: serverPort,
       );
+      
       _socketClient = WebSocketChannel.connect(uri);
+      
+      // Esperamos pacientemente a que se establezca la conexión real
+      await _socketClient!.ready; 
+
       connectionStatus = ConnectionStatus.connected;
 
       _socketClient!.stream.listen(
