@@ -15,14 +15,17 @@ class GameService {
   final StreamController<String> _mensajesController = StreamController<String>.broadcast();
   Stream<String> get streamMensajes => _mensajesController.stream;
 
-  Future<bool> inicializarConexion(String host, int port) async {
-    // CAMBIO AQUÍ: Ahora le ponemos 'await' y quitamos el Future.delayed
+Future<bool> inicializarConexion(String host, int port) async {
     await _socketHandler.connectToServer(
       host, 
       port, 
       (message) {
-        // Notificamos a quien esté escuchando (el main)
+        // Notificamos a quien esté usando el callback directo
         if (onMessageReceived != null) onMessageReceived!(message);
+        
+        // ¡ESTA ES LA LÍNEA MÁGICA QUE FALTA! 
+        // Envía el mensaje al Stream para que VistaEspera lo escuche
+        _mensajesController.add(message); 
       },
       onError: (e) => _actualizarEstado(),
       onDone: () => _actualizarEstado(),

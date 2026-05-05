@@ -37,10 +37,10 @@
         }
       ],
       "groupId": "__main__",
-      "viewportWidth": 320,
-      "viewportHeight": 180,
-      "viewportX": 0,
-      "viewportY": 0,
+      "viewportWidth": 211,
+      "viewportHeight": 121,
+      "viewportX": 1,
+      "viewportY": 1,
       "viewportAdaptation": "letterbox",
       "viewportInitialColor": "green",
       "viewportPreviewColor": "blue",
@@ -115,7 +115,7 @@
     {
       "name": "Heart_Full",
       "fileName": "media/Heart_Full.png",
-      "mediaType": "tileset",
+      "mediaType": "atlas",
       "tileWidth": 13,
       "tileHeight": 12,
       "selectionColorHex": "#FFCC00",
@@ -124,27 +124,27 @@
     {
       "name": "Heart_Empty",
       "fileName": "media/Heart_Empty.png",
-      "mediaType": "tileset",
+      "mediaType": "atlas",
       "tileWidth": 13,
       "tileHeight": 12,
       "selectionColorHex": "#FFCC00",
       "groupId": "__group_1773414382725786_2"
     },
     {
-      "name": "tank_buttom",
-      "fileName": "media/tank_buttom.png",
-      "mediaType": "tileset",
-      "tileWidth": 161,
-      "tileHeight": 180,
+      "name": "tanks",
+      "fileName": "media/tanks.png",
+      "mediaType": "spritesheet",
+      "tileWidth": 150,
+      "tileHeight": 200,
       "selectionColorHex": "#FFCC00",
       "groupId": "__group_1773414388540045_3"
     },
     {
-      "name": "tank_top",
-      "fileName": "media/tank_top.png",
-      "mediaType": "tileset",
-      "tileWidth": 165,
-      "tileHeight": 149,
+      "name": "item_box",
+      "fileName": "media/sprite-6-1.png",
+      "mediaType": "spritesheet",
+      "tileWidth": 81,
+      "tileHeight": 81,
       "selectionColorHex": "#FFCC00",
       "groupId": "__group_1773415570044785_4"
     },
@@ -167,32 +167,32 @@
     {
       "id": "__group_1773414014927234_0",
       "name": "bullets",
-      "collapsed": true
+      "collapsed": false
     },
     {
       "id": "__group_1773414369631960_1",
       "name": "background",
-      "collapsed": true
+      "collapsed": false
     },
     {
       "id": "__group_1773414382725786_2",
       "name": "lifes",
-      "collapsed": true
+      "collapsed": false
     },
     {
       "id": "__group_1773414388540045_3",
       "name": "tanks",
-      "collapsed": true
+      "collapsed": false
     },
     {
       "id": "__group_1773415570044785_4",
       "name": "powerups",
-      "collapsed": true
+      "collapsed": false
     },
     {
       "id": "__group_1773415583683125_5",
       "name": "deadanimation",
-      "collapsed": true
+      "collapsed": false
     }
   ],
   "zoneTypes": [
