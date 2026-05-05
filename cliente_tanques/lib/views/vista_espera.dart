@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:cliente_tanques/game_service.dart';
 import 'package:cliente_tanques/views/vista_inicio.dart';
+// ¡NUEVO! Importamos la vista del juego
+import 'package:cliente_tanques/views/vista_juego.dart'; 
 
 class VistaEspera extends StatelessWidget {
   final String nombre;
@@ -31,10 +33,29 @@ class VistaEspera extends StatelessWidget {
           } else if (snapshot.hasData) {
             try {
               final data = jsonDecode(snapshot.data.toString());
+              
+              // ========================================================
+              // ¡NUEVO! DETECTAR INICIO DE PARTIDA
+              // ========================================================
+              if (data['type'] == 'game_start') {
+                // Future.microtask espera a que termine el frame actual 
+                // antes de navegar, evitando errores de Flutter.
+                Future.microtask(() {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => VistaJuego(miNombre: nombre),
+                    ),
+                  );
+                });
+              }
+              // ========================================================
+
+              // Actualizar la lista de jugadores (lo que ya tenías)
               if (data['type'] == 'player_list' && data['players'] != null) {
                 jugadores = List<String>.from(data['players']);
                 estado = "Pelotón actual: ${jugadores.length} soldados.";
-              } else {
+              } else if (data['type'] != 'game_start') {
                 estado = "Recibiendo datos encriptados...";
               }
             } catch (e) {
