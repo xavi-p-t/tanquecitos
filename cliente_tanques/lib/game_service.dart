@@ -15,18 +15,16 @@ class GameService {
   final StreamController<String> _mensajesController = StreamController<String>.broadcast();
   Stream<String> get streamMensajes => _mensajesController.stream;
 
-Future<bool> inicializarConexion(String host, int port) async {
+  Future<bool> inicializarConexion(String host, int port) async {
     await _socketHandler.connectToServer(
       host, 
       port, 
       (message) {
-        // Notificamos a quien esté usando el callback directo
         if (onMessageReceived != null) onMessageReceived!(message);
-        
-        // ¡ESTA ES LA LÍNEA MÁGICA QUE FALTA! 
-        // Envía el mensaje al Stream para que VistaEspera lo escuche
         _mensajesController.add(message); 
       },
+      // CAMBIO AQUÍ: Activamos la conexión segura WSS para el puerto 443
+      useSecureSocket: port == 443, 
       onError: (e) => _actualizarEstado(),
       onDone: () => _actualizarEstado(),
     );
